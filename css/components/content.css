@@ -1,0 +1,47 @@
+/*
+Content = main content container
+*/
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    gap: 40vh;
+
+    width: 100%;
+}
+
+
+/* When shrinking responsively, allows centering of multiple lines titles*/
+
+.content h1,
+.content h2 {
+    text-align: center;
+}
+
+/*Responsive images*/
+
+.content img {
+    max-width: 40%;
+    height: auto;
+}
+
+.content svg {
+    max-width: 30%;
+    min-width: 10vw;
+    height: auto;
+}
+
+.content p,
+.content div,
+.content svg,
+.content img,
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+    opacity: 0;
+    animation: fade-in var(--fade-in-duration) forwards;
+    animation-delay: var(--fade-in-delay);
+}

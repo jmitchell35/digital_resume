@@ -1,21 +1,6 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: black;
-    color: white;
-}
-
-@media all and (max-width: 767px) {
-    .welcome {
-    font-size:xx-large;
-    }
-}
-
-/* test */
-@media all and (min-width: 768px) {
-    .welcome {
-    font-size:xx-large;
-    }
-}
+@import url('./css/variables.css');
+@import url('./css/animations.css');
+@import url('./css/base.css');
+@import url('./css/components/content.css');
+@import url('./css/components/ed-card.css');
+@import url('./css/components/typewriter.css');

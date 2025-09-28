@@ -37,6 +37,12 @@ Generic vertical flex container
     justify-content: space-evenly;
 
     overflow-x: scroll;
+}
 
-    width: 100%;
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10vh;
 }

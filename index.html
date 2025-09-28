@@ -542,6 +542,105 @@
       </div>
     </div>
 
+    <!-- Experience -->
+    <div class="flex-col-cen">
+
+      <h2>Experience</h2>
+
+      <!-- Desktop and tablets -->
+      <div class="gallery desktop">
+
+        <div class="ed-card">
+          <div>
+            <h3>Teaching</h3>
+          </div>
+          <div>
+            French public secondary schools
+          </div>
+          <div>
+            <p>Sep 2016 - Sep 2021</p>
+          </div>
+        </div>
+
+        <div class="ed-card">
+          <div>
+            <h3>Analyst</h3>
+          </div>
+          <div>
+            <p>Absys - Mutualized call center services</p>
+          </div>
+          <div>
+            <p>Nov 2021 - Jun 2022</p>
+          </div>
+        </div>
+
+        <div class="ed-card">
+          <div>
+            <h3>Analysts Dpt Manager</h3>
+          </div>
+          <div>
+            <p>Absys - Mutualized call center services</p>
+          </div>
+          <div>
+            <p>Jun 2022 - Apr 2025</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mobile slideshow -->
+      <div class="slideshow-container mobile" data-slideshow="experience">
+
+        <div class="mySlides experience-slide">
+          <div class="ed-card">
+            <div>
+              <h3>Teaching</h3>
+            </div>
+            <div>
+              French public secondary schools
+            </div>
+            <div>
+              <p>Sep 2016 - Sep 2021</p>
+            </div>
+          </div>
+
+        <div class="mySlides experience-slide">
+          <div class="ed-card">
+          <div>
+            <h3>Analyst</h3>
+          </div>
+          <div>
+            <p>Absys - Mutualized call center services</p>
+          </div>
+          <div>
+            <p>Nov 2021 - Jun 2022</p>
+          </div>
+        </div>
+
+        <div class="mySlides experience-slide">
+          <div class="ed-card">
+            <div>
+              <h3>Analysts Dpt Manager</h3>
+            </div>
+            <div>
+              <p>Absys - Mutualized call center services</p>
+            </div>
+            <div>
+              <p>Jun 2022 - Apr 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot experience-dot" onclick="currentSlide(1, 'experience')"></span>
+        <span class="dot experience-dot" onclick="currentSlide(2, 'experience')"></span>
+        <span class="dot experience-dot" onclick="currentSlide(3, 'experience')"></span>
+      </div>
+
+    </div>
+
     <!-- Contact -->
     <div class="flex-col-cen">
 
@@ -581,6 +680,7 @@
       'education': 1,
       'skills': 1,
       'projects': 1,
+      'experience' : 1,
     };
 
     function initSlideshows() {
@@ -593,7 +693,7 @@
     }
 
     function plusSlides(n, slideshowDataAttribute) {
-      showSlides(slideIndices[slideshowDataAttributes] += n, slideshowDataAttribute);
+      showSlides(slideIndices[slideshowDataAttribute] += n, slideshowDataAttribute);
     }
 
     function currentSlide(n, slideshowDataAttribute) {

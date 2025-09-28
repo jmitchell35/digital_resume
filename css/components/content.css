@@ -7,7 +7,7 @@ Content = main content container
     align-items: center;
     justify-content: space-evenly;
     margin-top: 10vh;
-    gap: 25vh;
+    gap: 40vh;
 
     width: 100%;
 }
